@@ -2,12 +2,14 @@
     width: 200px;
 }
 
+.fondo-menu{
+    background-color:black;
+}
+
 .instagram{
-    color: black;
     font-size: 30px;
 }
 
 .facebook{
-    color: black;
     font-size: 30px;
 }

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "P001",
+    "img": "/src/assets/img/Dante-blend-blanco-fondo-blanco.jpg",
+    "name": "Dante Blanco",
+    "price": 6990
+  },
+  {
+    "id": "P002",
+    "img": "/src/assets/img/Dante-blend-tinto-fondo-blanco.jpg",
+    "name": "Dante Tinto",
+    "price": 6990
+  },
+  {
+    "id": "P003",
+    "img": "/src/assets/img/grus.jpg",
+    "name": "Grus",
+    "price": 25990
+  },
+  {
+    "id": "P004",
+    "img": "/src/assets/img/espumante.jpg",
+    "name": "Dante Espumante",
+    "price": 5990
+  },
+  {
+    "id": "P005",
+    "img": "/src/assets/img/meli-dueno.jpg",
+    "name": "Meli",
+    "price": 6990
+  },
+  {
+    "id": "P006",
+    "img": "/src/assets/img/toco.jpg",
+    "name": "Tococo",
+    "price": 32990
+  },
+  {
+    "id": "P007",
+    "img": "/src/assets/img/vigno.jpg",
+    "name": "Vigno",
+    "price": 7990
+  },
+  {
+    "id": "P008",
+    "img": "/src/assets/img/espumante.jpg",
+    "name": "Dante Espumante",
+    "price": 5990
+  }
+]
