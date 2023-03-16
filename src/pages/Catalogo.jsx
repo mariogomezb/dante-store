@@ -15,9 +15,9 @@ const Catalogo = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container justify-content-center">
         <Menu/>
-        <div className="row">
+        <div className="row ps-5">
           {vinos.map((item)=>(
             <CardProducto key= {item.id}item={item}/>))}
         </div>

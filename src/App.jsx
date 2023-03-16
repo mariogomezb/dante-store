@@ -6,6 +6,7 @@ import Carro from "./pages/Carro"
 import DetalleProducto from "./pages/DetalleProducto"
 import NotFound from "./pages/NotFound"
 import Catalogo from "./pages/Catalogo"
+import Registro from "./pages/Registro"
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/inicia" element={<IniciaSesion/>}/>
+        <Route path="/registro" element={<Registro/>}/>
         <Route path="/carro" element={<Carro/>}/>
         <Route path="/catalogo" element={<Catalogo/>}/>
-        <Route path="/detalle/:id" element={<DetalleProducto/>}/>
+        <Route path="/catalogo/:id" element={<DetalleProducto/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </div>

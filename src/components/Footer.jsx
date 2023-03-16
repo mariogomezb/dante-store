@@ -6,15 +6,16 @@ const Footer = () => {
 
     <div className=" bg-black pt-1 mt-3">
       <div className="row mt-5">
-        <div className="col-5">
+        <div className="col-4">
             <img className="logo" src={logo}/>
         </div>
-        <div className="col-4">
+        <div className="col-5">
           <ul className="d-flex mt-4">
             <a className="nav-link active text-white me-3" aria-current="page" href="/">Inicio</a>
             <a className="nav-link active text-white me-3" aria-current="page" href="/catalogo">Catálogo</a>
             <a className="nav-link text-white me-3" href="/carro"><i class="fa-solid fa-cart-shopping carro"></i></a>
-            <a className="nav-link text-white" href="/inicia"><i class="fa-regular fa-user"></i> Entrar</a>
+            <a className="nav-link text-white me-3" href="/inicia"><i class="fa-regular fa-user"></i> Entrar</a>
+            <a className="nav-link active text-white" aria-current="page" href="/registro">Registrarse</a>
           </ul>
         </div>
         <div className="col-3">

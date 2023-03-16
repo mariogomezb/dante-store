@@ -3,48 +3,56 @@
     "id": "P001",
     "img": "/src/assets/img/Dante-blend-blanco-fondo-blanco.jpg",
     "name": "Dante Blanco",
+    "desc": "Reflejo de la nobleza, energía y belleza de centenarias parras escondidas en lo profundo del Maule, nace este vino honesto, mezcla de Riesling 80% y Moscatel Rosada 20%. Cada botella guarda la riqueza de esra tierra de uvas intensas y voluptuosas, los aromas de sus cálidos días y frescas noches, el sabor de sus aguas y minerales y la textura de un entorno poderoso y mágico. DANTE Blend Blanco Gran Reserva, es un vino elegante y amable, de amarillo dorado, con notas a hierbas y flores silvestres, frutos de verano y un toque mineral que aporta cuerpo e identidad. En boca es fresco, frutal y consistente, de una sencilla riqueza, que conjuga armonía, sabor y una textura sedosa, que acaricia y conquista desde la primera copa. Ideal para acompañar diferentes pastas, todo tipo de carnes blancas y ensaladas frescas.",
     "price": 6990
   },
   {
     "id": "P002",
     "img": "/src/assets/img/Dante-blend-tinto-fondo-blanco.jpg",
     "name": "Dante Tinto",
+    "desc":"Elaborado con 80% de uva Carignan cosechadas de centenarias parras del secano costero del Valle del Maule y 20% de Cabernet Sauvignon de Alto del Cachapoal, nace de esta mezcla úica, intensa y de personalidad vigorosa, con un color brillante de cerezas y aromas a guinda, frutillas y hierbas. En boca se mezclan la acidez del Carignan y la textura suave del Cabernet Sauvignon, con un final largo que conquista. Dante Blend Tinto Gran Reserva, recoge toda la energía y sabiduría de los racimos de Carginan cultivados bajo un sol durante el día y el frescor nocturno y matinal del secano del Maule, sin más ayuda que la técnica vinilera y la pasión del. Ideal para acompañar carnes rojas algo magras, pastas, quesos y",
     "price": 6990
   },
   {
     "id": "P003",
     "img": "/src/assets/img/grus.jpg",
     "name": "Grus",
+    "desc":"Elaborado con 80% de uva Carignan cosechadas de centenarias parras del secano costero del Valle del Maule y 20% de Cabernet Sauvignon de Alto del Cachapoal, nace de esta mezcla úica, intensa y de personalidad vigorosa, con un color brillante de cerezas y aromas a guinda, frutillas y hierbas. En boca se mezclan la acidez del Carignan y la textura suave del Cabernet Sauvignon, con un final largo que conquista. Dante Blend Tinto Gran Reserva, recoge toda la energía y sabiduría de los racimos de Carginan cultivados bajo un sol durante el día y el frescor nocturno y matinal del secano del Maule, sin más ayuda que la técnica vinilera y la pasión del. Ideal para acompañar carnes rojas algo magras, pastas, quesos y",
     "price": 25990
   },
   {
     "id": "P004",
     "img": "/src/assets/img/espumante.jpg",
     "name": "Dante Espumante",
+    "desc":"Fruto de la mejor selección de uvas Chardonnay del Valle del Cachapoal, nace DANTE, un vino espumoso complejo y elegante. Elaborado bajo el método Charmat, recoge la pasión y experiencia de su creador, para llegar a tu paladar con burbujas refrescantes, finas y suaves. DANTE es un espumante vesátil, de rica acidez, aromas únicos y gran persistencia, que podras maridar con lo que prefieras. Perfecto para realzar grandes momentos y convertir cualquier experiencia en un recuerdo inolvidable... déjate cautivar.",
     "price": 5990
   },
   {
     "id": "P005",
     "img": "/src/assets/img/meli-dueno.jpg",
     "name": "Meli",
+    "desc":"Elaborado con 80% de uva Carignan cosechadas de centenarias parras del secano costero del Valle del Maule y 20% de Cabernet Sauvignon de Alto del Cachapoal, nace de esta mezcla úica, intensa y de personalidad vigorosa, con un color brillante de cerezas y aromas a guinda, frutillas y hierbas. En boca se mezclan la acidez del Carignan y la textura suave del Cabernet Sauvignon, con un final largo que conquista. Dante Blend Tinto Gran Reserva, recoge toda la energía y sabiduría de los racimos de Carginan cultivados bajo un sol durante el día y el frescor nocturno y matinal del secano del Maule, sin más ayuda que la técnica vinilera y la pasión del. Ideal para acompañar carnes rojas algo magras, pastas, quesos y",
     "price": 6990
   },
   {
     "id": "P006",
     "img": "/src/assets/img/toco.jpg",
     "name": "Tococo",
+    "desc":"Elaborado con 80% de uva Carignan cosechadas de centenarias parras del secano costero del Valle del Maule y 20% de Cabernet Sauvignon de Alto del Cachapoal, nace de esta mezcla úica, intensa y de personalidad vigorosa, con un color brillante de cerezas y aromas a guinda, frutillas y hierbas. En boca se mezclan la acidez del Carignan y la textura suave del Cabernet Sauvignon, con un final largo que conquista. Dante Blend Tinto Gran Reserva, recoge toda la energía y sabiduría de los racimos de Carginan cultivados bajo un sol durante el día y el frescor nocturno y matinal del secano del Maule, sin más ayuda que la técnica vinilera y la pasión del. Ideal para acompañar carnes rojas algo magras, pastas, quesos y",
     "price": 32990
   },
   {
     "id": "P007",
     "img": "/src/assets/img/vigno.jpg",
     "name": "Vigno",
+    "desc":"Elaborado con 80% de uva Carignan cosechadas de centenarias parras del secano costero del Valle del Maule y 20% de Cabernet Sauvignon de Alto del Cachapoal, nace de esta mezcla úica, intensa y de personalidad vigorosa, con un color brillante de cerezas y aromas a guinda, frutillas y hierbas. En boca se mezclan la acidez del Carignan y la textura suave del Cabernet Sauvignon, con un final largo que conquista. Dante Blend Tinto Gran Reserva, recoge toda la energía y sabiduría de los racimos de Carginan cultivados bajo un sol durante el día y el frescor nocturno y matinal del secano del Maule, sin más ayuda que la técnica vinilera y la pasión del. Ideal para acompañar carnes rojas algo magras, pastas, quesos y",
     "price": 7990
   },
   {
     "id": "P008",
     "img": "/src/assets/img/espumante.jpg",
     "name": "Dante Espumante",
+    "desc":"Fruto de la mejor selección de uvas Chardonnay del Valle del Cachapoal, nace DANTE, un vino espumoso complejo y elegante. Elaborado bajo el método Charmat, recoge la pasión y experiencia de su creador, para llegar a tu paladar con burbujas refrescantes, finas y suaves. DANTE es un espumante vesátil, de rica acidez, aromas únicos y gran persistencia, que podras maridar con lo que prefieras. Perfecto para realzar grandes momentos y convertir cualquier experiencia en un recuerdo inolvidable... déjate cautivar.",
     "price": 5990
   }
 ]

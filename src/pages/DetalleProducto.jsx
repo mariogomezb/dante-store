@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useCarroContext } from "../context/CarroContext";
 import { useParams, Link } from "react-router-dom";
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
 export default function DetalleProducto(){
   const [vinos, setVinos] = useState();
@@ -25,6 +27,7 @@ export default function DetalleProducto(){
 
   return (
     <div className="card mb-3 mt-5">
+    <Menu/>
       <div className="row g-0">
         <div className="col-md-4">
           <img src={vinos.img} className="img-fluid rounded-start h-100" alt="..." />
@@ -32,11 +35,14 @@ export default function DetalleProducto(){
         <div className="col-md-8">
           <div className="card-body">
             <h5 className="fs-1">{vinos.name}</h5>
-            <p className="card-text">Lorem</p>
-            <Link className="btn btn-outline-primary" onClick={() => addItem(vinos)} to="/carro">Comprar</Link>
+            <p className="card-text">{vinos.desc}</p>
+            <Link className="btn btn-dark" onClick={() => addItem(vinos)} to="/carro">Comprar</Link>
+            <a className="nav-link active text-black mt-3" aria-current="page" href="/catalogo">Volver a Catálogo</a>
           </div>
+          
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

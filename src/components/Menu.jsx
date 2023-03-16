@@ -24,6 +24,9 @@ const Menu = () => {
                 <li className="nav-item">
                     <a className="nav-link text-white" href="/inicia"><i class="fa-regular fa-user"></i> Entrar</a>
                 </li>
+                <li className="nav-item">
+                    <a className="nav-link text-white" href="/registro">Registrarse</a>
+                </li>
             </ul>
             </div>
             </div>
