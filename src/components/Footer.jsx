@@ -1,31 +1,33 @@
 import React from 'react'
 import logo from '../assets/img/logo_blanco.png'
+import {Link} from "react-router-dom";
+import {useCarroContext} from "../context/CarroContext";
 
 const Footer = () => {
+  const {totalCarro} = useCarroContext();
   return (
-
     <div className=" bg-black pt-1 mt-3">
       <div className="row mt-5">
         <div className="col-4">
-            <img className="logo" src={logo}/>
+        <Link className="navbar-brand" to="/"><img class="logo" src={logo}/></Link>
         </div>
         <div className="col-5">
           <ul className="d-flex mt-4">
-            <a className="nav-link active text-white me-3" aria-current="page" href="/">Inicio</a>
-            <a className="nav-link active text-white me-3" aria-current="page" href="/catalogo">Catálogo</a>
-            <a className="nav-link text-white me-3" href="/carro"><i class="fa-solid fa-cart-shopping carro"></i></a>
-            <a className="nav-link text-white me-3" href="/inicia"><i class="fa-regular fa-user"></i> Entrar</a>
-            <a className="nav-link active text-white" aria-current="page" href="/registro">Registrarse</a>
+            <Link className="nav-link active text-white me-3" aria-current="page" to="/">Inicio</Link>
+            <Link className="nav-link active text-white me-3" aria-current="page" to="/catalogo">Catálogo</Link>
+            <Link className="nav-link text-white me-3" to="/carro"><i class="fa-solid fa-cart-shopping carro"></i></Link>
+            <Link className="nav-link text-white me-3" to="/inicia"><i class="fa-regular fa-user"></i> Entrar</Link>
+            <Link className="nav-link active text-white" aria-current="page" to="/registro">Registrarse</Link>
           </ul>
         </div>
         <div className="col-3">
             <h5 className="text-white">Síguenos en:</h5>
               <div className="d-flex">
                 <div>
-                  <a href="https://www.instagram.com/dante_wines/" target="_blank"><i class="fa-brands fa-instagram instagram text-white me-5"></i></a>
+                  <Link to="https://www.instagram.com/dante_wines/" target="_blank"><i class="fa-brands fa-instagram instagram text-white me-5"></i></Link>
                 </div>
                 <div className="col">
-                  <a href="https://www.facebook.com/profile.php?id=100070815490807" target="_blank"><i class="fa-brands fa-facebook facebook text text-white"></i></a>
+                  <Link to="https://www.facebook.com/profile.php?id=100070815490807" target="_blank"><i class="fa-brands fa-facebook facebook text text-white"></i></Link>
                 </div>
               </div>
         </div>
