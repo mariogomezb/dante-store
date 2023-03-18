@@ -23,6 +23,9 @@ export default function Menu(){
                 <Link className="nav-link active text-white" aria-current="page" to="/catalogo">Catálogo</Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link active text-white" aria-current="page" to="/favoritos">Favoritos</Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link text-white" to="/carro"><i class="fa-solid fa-cart-shopping carro"></i>${formatoPrecio(totalCarro())}</Link>
               </li>
               <li className="nav-item">

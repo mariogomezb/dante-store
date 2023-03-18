@@ -1,9 +1,8 @@
 import React from 'react'
-import CardProducto from '../components/CardProducto'
-import Footer from '../components/Footer'
-import Menu from '../components/Menu'
-
 import { useState, useEffect } from 'react'
+import CardProducto from '../components/CardProducto'
+import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 
 const Catalogo = () => {
   const [vinos,setVinos]=useState ([]);
@@ -19,7 +18,7 @@ const Catalogo = () => {
         <Menu/>
         <div className="row ps-5">
           {vinos.map((item)=>(
-            <CardProducto key= {item.id}item={item}/>))}
+            <CardProducto key= {item.id} item={item}/>))}
         </div>
         <Footer/>
     </div>

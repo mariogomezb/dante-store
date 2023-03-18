@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
-
 import Home from "./pages/Home"
 import IniciaSesion from "./pages/IniciaSesion"
 import Carro from "./pages/Carro"
 import DetalleProducto from "./pages/DetalleProducto"
 import NotFound from "./pages/NotFound"
 import Catalogo from "./pages/Catalogo"
+import Favoritos from "./pages/Favoritos"
 import Registro from "./pages/Registro"
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Route path="/registro" element={<Registro/>}/>
         <Route path="/carro" element={<Carro/>}/>
         <Route path="/catalogo" element={<Catalogo/>}/>
+        <Route path="/favoritos" element={<Favoritos/>}/>
         <Route path="/catalogo/:id" element={<DetalleProducto/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>

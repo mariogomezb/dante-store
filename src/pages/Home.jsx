@@ -6,9 +6,9 @@ import Menu from '../components/Menu'
 const Home = () => {
   return (
     <div className="container">
-    <Menu/>
-    <Carrusel/>
-    <Footer/>
+      <Menu/>
+      <Carrusel/>
+      <Footer/>
     </div>
   )
 }
