@@ -36,10 +36,11 @@ export default function DetalleProducto(){
           <div className="card-body">
             <h5 className="fs-1">{vinos.name}</h5>
             <p className="card-text">{vinos.desc}</p>
-            <Link className="btn btn-dark" onClick={() => addItem(vinos)} to="/carro">Comprar</Link>
-            <a className="nav-link active text-black mt-3" aria-current="page" href="/catalogo">Volver a Catálogo</a>
+            <div className="d-flex gap-2 card-buttons">
+              <Link className="btn btn-dark" onClick={() => addItem(vinos)} to="/carro">Comprar</Link>
+              <Link className="btn btn-dark" to="/catalogo">Volver a Catálogo</Link>
+            </div>  
           </div>
-          
         </div>
       </div>
       <Footer/>

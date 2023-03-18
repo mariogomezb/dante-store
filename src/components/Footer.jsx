@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div className="row text-center mt-3">
         <h7  className="text-white"><i class="fa-solid fa-copyright"></i> copyright 2023</h7>
-        <h7 class="text-white mt-2 pb-3"> Sitio desarrolado por Cristobal & Mario</h7>
+        <h7 class="text-white mt-2 pb-3"> Sitio desarrollado por Cristobal & Mario</h7>
       </div>
   </div>
   )
