@@ -1,4 +1,7 @@
 import React from 'react'
+import {Link, NavLink} from "react-router-dom";
+import {useCarroContext} from "../context/CarroContext";
+import {formatoPrecio} from "../utils/formatoPrecio";
 import logo from '../assets/img/logo_blanco.png'
 
 const Menu = () => {
@@ -34,5 +37,3 @@ const Menu = () => {
     </div>
 )
 }
-
-export default Menu

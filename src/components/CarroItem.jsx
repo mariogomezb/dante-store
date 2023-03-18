@@ -16,7 +16,7 @@ export default function CarroItem({ item }) {
           />
           <div>
             <h5 className="mb-0">{item.name}</h5>
-            <small className="text-muted">{formatoPrecio(item.precio)}</small>
+            <small className="text-muted">{formatoPrecio(item.price)}</small>
           </div>
         </div>
         <div className="d-flex gap-1">
