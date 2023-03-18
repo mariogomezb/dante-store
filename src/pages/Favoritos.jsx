@@ -7,10 +7,10 @@ import Footer from '../components/Footer';
 export default function Favoritos() {
   const {favoritos} = useFavoritosContext();
   return (
-    <div className="container">
+    <div className="container justify-content-center">
       <Menu />
       <h1 className="text-center my-5">Favoritos</h1>
-      <div className="p-3 galeria grid-columns-4">
+      <div className="row ps-5">
         {favoritos.map((item) => (
             <CardProducto key={item.id} item={item} seleccionaFavoritos />
           ))
