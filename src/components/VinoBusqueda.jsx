@@ -4,8 +4,8 @@ const VinoBusqueda = ({ setSearch }) => {
   return (
     <div className="browser py-3" style={{ height: "10rem" }}>
       <div className="container">
-        <Form className="d-flex flex-column align-items-center my-3">
-          <Form.Label htmlFor="search" className="h3">
+        <Form className="d-flex flex-column align-items-start my-3">
+          <Form.Label htmlFor="search" className="h4">
             Encuentra tu producto
           </Form.Label>
           <input
