@@ -2,10 +2,12 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import CardProducto from '../components/CardProducto'
 import Menu from '../components/Menu'
+import VinoBusqueda from '../components/VinoBusqueda'
 import Footer from '../components/Footer'
 
 const Catalogo = () => {
-  const [vinos,setVinos]=useState ([]);
+  const [vinos,setVinos]= useState ([]);
+  const [search, setSearch] = useState(""); 
 
   useEffect(() => {
     fetch("vinos.json")
@@ -16,8 +18,11 @@ const Catalogo = () => {
   return (
     <div className="container justify-content-center">
         <Menu/>
+        <VinoBusqueda setSearch={setSearch} />
         <div className="row ps-5">
-          {vinos.map((item)=>(
+          {vinos
+          .filter((item) => item.name.toLowerCase().includes(search))
+          .map((item)=>(
             <CardProducto key= {item.id} item={item}/>))}
         </div>
         <Footer/>
