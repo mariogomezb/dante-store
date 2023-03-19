@@ -2,11 +2,11 @@ import Form from "react-bootstrap/Form"
 
 const VinoBusqueda = ({ setSearch }) => {
   return (
-    <div className="browser py-5" style={{ height: "17rem" }}>
+    <div className="browser py-3" style={{ height: "10rem" }}>
       <div className="container">
-        <Form className="d-flex flex-column align-items-start my-3">
+        <Form className="d-flex flex-column align-items-center my-3">
           <Form.Label htmlFor="search" className="h3">
-            Encuentra tu vino
+            Encuentra tu producto
           </Form.Label>
           <input
             type="text"
