@@ -13,3 +13,20 @@
 .facebook{
     font-size: 30px;
 }
+
+.total{
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.sumar-restar{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.sumar-restar:hover{
+    background-color: white;
+    color: black;
+    border-color: white
+}

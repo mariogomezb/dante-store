@@ -25,7 +25,7 @@ export default function Carro(){
               <b>El carrito está vacío</b>
             </li>
           )}
-          <li className="list-group-item list-group-item-action active text-end">
+          <li className="list-group-item list-group-item-action active text-end total">
             <b>Total: ${totalCarro().toLocaleString("de-DE")}</b>
           </li>
         </ul>

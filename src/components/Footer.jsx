@@ -2,9 +2,11 @@ import React from 'react'
 import logo from '../assets/img/logo_blanco.png'
 import {Link} from "react-router-dom";
 import {useCarroContext} from "../context/CarroContext";
+import { useFavoritosContext } from '../context/FavoritosContext';
 
 const Footer = () => {
   const {totalCarro} = useCarroContext();
+  const {userName}=useFavoritosContext()
   return (
     <div className=" bg-black pt-1 mt-3">
       <div className="row mt-5">
@@ -15,7 +17,12 @@ const Footer = () => {
           <ul className="d-flex mt-4">
             <Link className="nav-link active text-white me-3" aria-current="page" to="/">Inicio</Link>
             <Link className="nav-link active text-white me-3" aria-current="page" to="/catalogo">Catálogo</Link>
+            {userName &&(
+            <Link className="nav-link active text-white me-3" aria-current="page" to="/favoritos">Favoritos</Link>
+            )}
+            {userName &&(
             <Link className="nav-link text-white me-3" to="/carro"><i class="fa-solid fa-cart-shopping carro"></i></Link>
+            )}
             <Link className="nav-link text-white me-3" to="/inicia"><i class="fa-regular fa-user"></i> Entrar</Link>
             <Link className="nav-link active text-white" aria-current="page" to="/registro">Registrarse</Link>
           </ul>

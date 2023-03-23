@@ -4,13 +4,21 @@ import {useCarroContext} from "../context/CarroContext";
 import {formatoPrecio} from "../utils/formatoPrecio";
 import logo from '../assets/img/logo_blanco.png'
 
+import { useFavoritosContext } from '../context/FavoritosContext';
+
 export default function Menu(){
   const {totalCarro} = useCarroContext();
+
+  const {userName}=useFavoritosContext()
+
   return (
     <div className="fondo-menu">
       <nav className="navbar navbar-expand-lg bg-body-white">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/"><img class="logo" src={logo}/></Link>
+          {userName &&(
+          <div className="text-white"> Bienvenido: {userName}</div>
+          )}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
           </button>
@@ -22,12 +30,16 @@ export default function Menu(){
               <li className="nav-item">
                 <Link className="nav-link active text-white" aria-current="page" to="/catalogo">Catálogo</Link>
               </li>
-              <li className="nav-item">
+                {userName &&(
+                  <li className="nav-item">
                 <Link className="nav-link active text-white" aria-current="page" to="/favoritos">Favoritos</Link>
-              </li>
+              </li>  
+                )}
+              {userName&&(
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/carro"><i class="fa-solid fa-cart-shopping carro"></i>${formatoPrecio(totalCarro())}</Link>
               </li>
+              )}
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/inicia"><i class="fa-regular fa-user"></i> Entrar</Link>
               </li>

@@ -41,7 +41,7 @@ export default function CardProducto({item, seleccionaFavoritos}){
             onClick={() => {
               eliminarFavoritos(item.id);
             }}
-            variant="contained"
+            variant="dark"
             color="error"
             startIcon={<DeleteIcon />}
           >
@@ -54,7 +54,7 @@ export default function CardProducto({item, seleccionaFavoritos}){
               adicionFavoritos(item);
             }}
             size="small"
-            variant="contained"
+            variant="dark"
             color="primary"
             sx={{ padding: 0.5 }}
             endIcon={<SendIcon />}

@@ -5,6 +5,7 @@ export const FavoritosContext = createContext()
 export default function FavoritosProvider({children}){
 
   const [favoritos, setFavoritos] = useState([])
+  const [userName,setUsername] = useState("")
 
   const adicionFavoritos = (item) => {
     setFavoritos([...favoritos, item])
@@ -14,9 +15,13 @@ export default function FavoritosProvider({children}){
     setFavoritos(favoritos.filter((item) => item.id != id))
   }
 
+  const login = (userName)=>{
+    setUsername(userName)
+  }
   return (
     <FavoritosContext.Provider 
-    value={{
+    value={{login,
+      userName,
       favoritos, 
       adicionFavoritos, 
       eliminarFavoritos

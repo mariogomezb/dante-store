@@ -21,7 +21,7 @@ export default function CarroItem({ item }) {
         </div>
         <div className="d-flex gap-1">
           <button
-            className="btn btn-outline-danger btn-sm"
+            className="btn btn-outline-danger btn-sm sumar-restar"
             onClick={() => removeItem(item)}
           >
             -
@@ -30,7 +30,7 @@ export default function CarroItem({ item }) {
             {findItemCount(item.id)}
           </button>
           <button
-            className="btn btn-outline-primary btn-sm"
+            className="btn btn-outline-primary btn-sm sumar-restar"
             onClick={() => addItem(item)}
           >
             +

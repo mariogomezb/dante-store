@@ -2,30 +2,38 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import swal from 'sweetalert';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useFavoritosContext } from '../context/FavoritosContext';
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 const IniciaSesion = () => {
 
+const {login} =  useFavoritosContext()
+
 const [usermail, setUserMail] = useState("")
 const [userpassword, setUserPassword] = useState("")
+const [userName,setUsername] = useState("")
 
 const handleSubmit =(e)=>{
   e.preventDefault()
-  if (!usermail.trim()|| !userpassword.trim() ) swal("Favor ingresar todos los datos","","info");
+  if (!userName.trim()|| !userpassword.trim() ) swal("Favor ingresar todos los datos","","info")
+  if (userName.trim()==="Mario" && userpassword==='123')
+  login(userName)
+  if (userName.trim()!="Mario" || userpassword !='123') swal("Usuario o contraseña incorecta","","error")
 }
 
   return (
     <div className="container">
+
       <Menu/>
       <div className="row justify-content-center mt-5 mb-5">
       <div className="col-4">
       <Form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label"> Email</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail" onChange={(e)=>setUserMail(e.target.value)}></input>
+          <label htmlFor="exampleInputEmail1" className="form-label"> Nombre</label>
+          <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su Nombre" onChange={(e)=>setUsername(e.target.value)}></input>
         </div>
         <div className="mb-3">
           <label htmlFor="exampleInputPassword1" className="form-label"> Contraseña</label>
@@ -51,3 +59,4 @@ const handleSubmit =(e)=>{
 }
 
 export default IniciaSesion
+

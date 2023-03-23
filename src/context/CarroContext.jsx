@@ -4,6 +4,7 @@ export const CarroContext = createContext();
 
 export default function CarroProvider({ children }) {
   const [carro, setCarro] = useState([]);
+  const [userName,setUsername] = useState("")
 
   const addItem = (item) => {
     const itemExists = carro.find((i) => i.id === item.id);
@@ -38,7 +39,7 @@ export default function CarroProvider({ children }) {
 
   return (
     <CarroContext.Provider
-      value={{
+      value={{userName,
         carro,
         addItem,
         removeItem,

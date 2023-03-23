@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "img": "../src/assets/img/mario.png",
+        "nombre": "Mario Alberto Gómez Bobadilla",
+        "email":"mariogomezb@gmail.com",
+        "contraseña": "123"
+    },
+    {
+        "id": "2",
+        "img": "/src/assets/img/Dante-blend-blanco-fondo-blanco.jpg",
+        "nombre": "Cristobal Paredes",
+        "email":"cristobal@gmail.com",
+        "contraseña": "123"
+    }
+]

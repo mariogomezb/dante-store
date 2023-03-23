@@ -1,10 +1,16 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import logo from '../assets/img/logo.png'
+import { useUserContext } from '../context/UserContext'
 
 const CustomNavBar = () => {
+
+  const {user, setUser}= useUserContext()
+
   return (
     <div className="container">
       <div>
+      <h1 className="text-white">hola</h1>
       <nav className="navbar navbar-expand-lg bg-body-white">
                 <div class="container-fluid">
                 <a className="navbar-brand" href="#"><img className="logo" src={logo}/></a>
@@ -19,8 +25,11 @@ const CustomNavBar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#">Catalogo</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Favoritos</a>
+                    <li>
+                        <NavLink to="/catalogo" className="nav-link">Catálogo</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/inicia" className="nav-link">Favoritos</NavLink>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Iniciar Sesión</a>

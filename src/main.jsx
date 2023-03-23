@@ -9,12 +9,12 @@ import FavoritosProvider from "./context/FavoritosContext";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CarroProvider>
       <FavoritosProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+        <CarroProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </CarroProvider>
       </FavoritosProvider>
-    </CarroProvider>
   </React.StrictMode>
 );
