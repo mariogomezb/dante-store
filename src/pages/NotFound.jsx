@@ -19,7 +19,7 @@ const NotFound = () => {
           </div>
         </div>
         <div className="row text-center">
-        <h3>visítanos en nuestras redes</h3>
+        <h3>visítanos en nuestras redes sociales</h3>
         </div>
         <div className="row text-center">
             <div className="col-12">
